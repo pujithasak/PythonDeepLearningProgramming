@@ -7,7 +7,7 @@ def string_alternative(input):
 # In this main method taking input string from user and calling string_alternative method by passing the input string as parameter and the result is printed
 def main():
     string = input("Enter the string:")
-    print('Output is' + string_alternative(string))
+    print('Output is ' + string_alternative(string))
 
 
 if __name__ == "__main__":
