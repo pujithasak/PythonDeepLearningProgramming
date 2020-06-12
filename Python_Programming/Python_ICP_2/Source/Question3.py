@@ -16,4 +16,5 @@ with open(fileName, 'a') as f:
     f.write("\n\nWord Frequency in this file is as below:")
     for word, count in word_frequency.items():
         f.write("\n{} = {}".format(word, count))
+        print("{} = {}".format(word, count))
 file.close()
