@@ -9,7 +9,6 @@ for line in file:
     words = line.lower().strip().split(" ")
     for word in words:
         word_frequency[word] = word_frequency.get(word, 0) + 1
-print()
 file.close()
 
 # The word frequency is written in the same file by opening the file in append mode
