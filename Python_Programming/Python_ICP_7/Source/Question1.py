@@ -23,11 +23,9 @@ clf0.fit(X_train, twenty_train.target)
 clf1 = MultinomialNB()
 clf1.fit(X_train1, twenty_train.target)
 
-
 clf2 = MultinomialNB()
 clf2.fit(X_train2, twenty_train.target)
 twenty_test = fetch_20newsgroups(subset='test', shuffle=True)
-
 
 X_test_tfidf = tfidf_Vt.transform(twenty_test.data)
 predicted = clf.predict(X_test_tfidf)
